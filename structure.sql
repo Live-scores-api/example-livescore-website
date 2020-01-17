@@ -1,0 +1,7 @@
+CREATE TABLE `cache` (
+ `url` int(11) NOT NULL,
+ `json` longtext NOT NULL,
+ `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ PRIMARY KEY (`url`),
+ UNIQUE KEY `url` (`url`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
