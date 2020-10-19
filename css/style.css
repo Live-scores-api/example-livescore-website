@@ -16,6 +16,7 @@ body {
 	text-align: right;
 }
 
+.time-box,
 .score-box {
 	background-color: #121212;
 	color: #fff;
