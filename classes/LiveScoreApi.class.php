@@ -109,7 +109,7 @@ class LiveScoreApi {
 	 */
 	protected function _useCache($url) {
 		$url = mysqli_escape_string($this->connection, crc32($url));
-		$query = "SELECT json FROM cache WHERE url = '$url' AND time > DATE(NOW()-INTERVAL 60 SECOND)";
+		$query = "SELECT json FROM cache WHERE url = '$url' AND time > (NOW()-INTERVAL 60 SECOND)";
 		$result = mysqli_query($this->connection, $query);
 		if (!$result) {
 			return false;
