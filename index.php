@@ -25,7 +25,7 @@ foreach ($scores as $_score) { ?>
 		<div class="col-md-2 score-box">
 			<?=$_score['score']?>
 		</div>
-		<div class="col-md-4 team-name rigth">
+		<div class="col-md-4 team-name right">
 			<?=$_score['away_name']?>
 		</div>
 	</div>
@@ -40,5 +40,5 @@ foreach ($scores as $_score) { ?>
 <?php
 }
 
-include 'inc/rigth.php';
+include 'inc/right.php';
 include 'inc/footer.php';
